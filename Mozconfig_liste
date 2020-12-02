@@ -17,6 +17,7 @@ ac_add_options --enable-js-shell
 ac_add_options --disable-warnings-as-errors
 ac_add_options --disable-maintenance-service
 mk_add_options MOZ_STYLO=1
+ac_add_options --disable-stylo
 
 ac_add_options --with-distribution-id=AnonymousID
 ac_add_options --with-app-name=AnonymousName
@@ -28,6 +29,11 @@ ac_add_options --enable-rust-tests
 ac_add_options --enable-dmd
 ac_add_options --enable-extensions=default
 ac_add_options --enable-eme=widevine
+
+mk_add_options MOZ_APP_DISPLAYNAME="Tor Browser"
+ac_add_options --disable-webrtc
+ac_add_options --disable-parental-controls
+ac_add_options --enable-release
 
 export MOZILLA_OFFICIAL=1
 export BUILD_OFFICIAL=1
