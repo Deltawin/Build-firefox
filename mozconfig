@@ -1,0 +1,33 @@
+export MOZILLA_OFFICIAL=1
+export BUILD_OFFICIAL=1
+export MOZ_TELEMETRY_REPORTING=1
+export BUILDING_RELEASE=1
+
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/Build-nightly-01
+mk_add_options MOZILLA_OFFICIAL=1
+mk_add_options BUILD_OFFICIAL=1
+mk_add_options MOZ_STYLO=1
+# mk_add_options MOZ_MAKE_FLAGS="-j6"
+
+ac_add_options --with-branding=browser/branding/firefox3.5-22
+ac_add_options --host=x86_64-pc-mingw32 
+ac_add_options --target=x86_64-pc-mingw32
+ac_add_options --enable-application=browser
+ac_add_options --enable-official-branding
+ac_add_options --enable-optimize=-O2
+ac_add_options --enable-tests
+ac_add_options --enable-crashreporter
+ac_add_options --enable-eme=widevine
+ac_add_options --enable-rust-tests
+ac_add_options --enable-rust-simd
+ac_add_options --enable-jemalloc
+ac_add_options --enable-extensions=default
+ac_add_options --enable-rust-simd
+ac_add_options --enable-dmd
+
+ac_add_options --disable-updater
+ac_add_options --disable-warnings-as-errors
+ac_add_options --disable-maintenance-service
+ac_add_options --disable-debug
+ac_add_options --disable-debug-symbols
+ac_add_options --disable-parental-controls
