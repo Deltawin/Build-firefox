@@ -1,0 +1,6 @@
+hg --verbose pull -u
+./mach build langpack-fr
+./mach build installers-fr
+./mach package
+
+./mach build && ./mach package && ./mach build langpack-fr && ./mach build installers-fr
