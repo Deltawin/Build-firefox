@@ -1,12 +1,6 @@
 MOZ_AUTOMATION=1
-MOZILLA_OFFICIAL=1 
 --enable-update-channel=nightly 
-ENABLE_CLANG_PLUGIN=1 
 --enable-profile-use=cross 
---with-pgo-profile-path=/builds/worker/fetches/merged.profdata 
---with-pgo-jarlog=/builds/worker/fetches/en-US.log MOZ_LTO=cross 
 --enable-js-shell 
 --enable-rust-simd 
---with-mozilla-api-keyfile=/builds/mozilla-desktop-geoloc-api.key 
---with-google-location-service-api-keyfile=/builds/gls-gapi.data 
 --with-branding=browser/branding/nightly
