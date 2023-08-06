@@ -1,6 +1,0 @@
-MOZ_AUTOMATION=1
---enable-update-channel=nightly 
---enable-profile-use=cross 
---enable-js-shell 
---enable-rust-simd 
---with-branding=browser/branding/nightly
